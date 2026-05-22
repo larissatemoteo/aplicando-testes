@@ -22,7 +22,7 @@ Neste repositório, o teste de unidade valida uma biblioteca de conversão de te
 
 ### Como o teste é aplicado
 
-O framework usado é o xUnit. Em vez de escrever um teste separado para cada valor, o xUnit nso permite criar um único método de teste parametrizado com o atributo `[Theory]`. Cada conjunto de valores de entrada é informado com o atributo `[InlineData]`, e o xUnit executa o método uma vez para cada `[InlineData]`. Por isso, mesmo havendo um só método de teste, o resultado mostra 6 testes executados.
+O framework usado é o xUnit. Em vez de escrever um teste separado para cada valor, o xUnit nos permite criar um único método de teste parametrizado com o atributo `[Theory]`. Cada conjunto de valores de entrada é informado com o atributo `[InlineData]`, e o xUnit executa o método uma vez para cada `[InlineData]`. Por isso, mesmo havendo um só método de teste, o resultado mostra 6 testes executados.
 
 Cada `[InlineData]` traz dois números: o valor em Fahrenheit que será passado para o método e o resultado esperado em Celsius. Dentro do teste, o método é chamado e o valor que ele devolveu é comparado com o esperado usando `Assert.Equal`. Se os dois forem diferentes, o teste falha.
 
